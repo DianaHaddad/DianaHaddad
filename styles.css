@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#terminal {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #00ff00;
+}
+
+#output {
+    margin-bottom: 10px;
+}
+
+#prompt {
+    color: #00ff00;
+}
+
+#user-input {
+    background-color: black;
+    color: green;
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #00ff00;
+}
+
+/* Help button */
+#help-button {
+    background-color: #00ff00;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+/* Movable Help box */
+#help-box {
+    background-color: black;
+    color: white; /* Ensure text in help box is white */
+    padding: 20px;
+    border: 1px solid #00ff00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    font-family: monospace;
+    display: none;
+}
+
+#help-box h3 {
+    color: #00ff00;
+}
+
+#help-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#help-box li {
+    margin: 5px 0;
+}
+
+#close-help {
+    background-color: #00ff00;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Draggable header */
+#help-header {
+    padding: 10px;
+    cursor: move;
+    background-color: #00ff00;
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
